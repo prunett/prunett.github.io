@@ -7,6 +7,11 @@ nav: true
 nav_order: 6
 ---
 
+## Ecole des Ponts et Chaussées
+
+Teaching assistant and lecturer:
+- Operations Research (2024)
+
 ## Mines Saint-Etienne
 
 Teaching assistant and lecturer:

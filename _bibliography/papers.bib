@@ -1,6 +1,45 @@
 ---
 ---
 
+@misc{prunet2025heuristicPicking,
+      abbr={Preprint},
+      title={Efficient move evaluation and neighborhood exploration for integrated order picking problems}, 
+      author={Thibault Prunet and Nabil Absi and Diego Cattaruzza},
+      year={2025},
+      pdf={https://github.com/prunett/prunett.github.io/tree/master/assets/pdf/Prunet_heuristic_picking_WP.pdf},
+      abstract={Order Picking (OP) is widely considered as the most resource-intensive activity in warehousing logistics. The optimization of OP planning problems has attracted substantial attention from the literature, and recent studies highlighted the importance of integrating several levels of decisions for OP performances. While the mathematical programming literature on the topic has seen important advances in the recent years by exploiting problem-specific knowledge on the warehouse structure, the metaheuristic literature does not fully exploit this structure to propose efficient neighborhoods. In this paper, we contribute at addressing this research gap by introducing generic move evaluation and neighborhood exploration routines for a broad class of integrated OP problems. First, we propose a 2-step constructive heuristic for the Picker Routing Problem (PRP), coined the Aisle First Cross Second (AFCS) heuristic. The AFCS heuristic runs in linear time of the size of the instance, and provides upper and lower bounds for the problem with a proven approximation ratio. Then, we introduce a neighborhood exploration scheme that uses the bounds returned by the AFCS as surrogate objective functions to prune the search. To highlight the potential of these methodological contributions, we develop a generic Large Neighborhood Search (LNS) algorithm that is tested on benchmark instances of two important problems of the OP literature with different structures: the Joint Order Batching and Picker Routing Problem (JOBPRP) and the Storage Location Assignment and Picker Routing Problem (SLAPRP). Numerical experiments show that the LNS matches state-of-the-art methods from the literature for both the JOBPRP and the SLAPRP.}
+}
+
+@misc{bouvier2025contextualMD,
+      abbr={Preprint},
+      title={Primal-dual algorithm for contextual stochastic combinatorial optimization}, 
+      author={Louis Bouvier and Thibault Prunet and Axel Parmentier and Vincent Leclère},
+      year={2025},
+      pdf={https://github.com/prunett/prunett.github.io/tree/master/assets/pdf/WP_contextual_MD.pdf},
+      abstract={The field of contextual stochastic optimization has recently emerged from the renewed interest of combining combinatorial optimization and machine learning techniques to solve decision-making problems in the face of uncertainty. Traditional solution methods for stochastic optimization problems are not able to fully exploit the available contextual information at decision-making time, prompting the need for new algorithmic developments. In this paper, we address this gap with a “learning by experience” perspective. We aim at learning a policy that minimizes the empirical risk from a dataset consisting only of past realizations of the uncertain parameter and context. To that end, we introduce a generic primal-dual algorithm for a broad class of combinatorial stochastic optimization problems. In particular, we make minimal assumptions on the structure of the deterministic problem per scenario, and no assumption at all on the objective function.
+We extend classical results on Fenchel-Young losses with the introduction of a new regularization by sparse perturbation on the distribution simplex. This allows us to derive tractable updates for the algorithm that only involve computations in the original space, while being able to handle a generic objective function. The linear convergence of the primal-dual algorithm is established in a restricted setting, provided a convexity assumption related to the Jensen gap of the regularizer. Finally, we bound the non-optimality of the returned policy with respect to the empirical risk. Computational experiments on a contextual stochastic version of the minimum weight spanning tree problem show that our algorithm is practically efficient and scalable, achieving similar performance than a sophisticated Lagrangian-based heuristic for a fraction of the computational load.}
+}
+
+
+@article{prunet_note_2025,
+      abbr={Article},
+      bibtex_show={true},
+      pdf={https://doi.org/10.1016/j.ejtl.2024.100136},
+	title = {A note on the complexity of the picker routing problem in multi-block warehouses and related problems},
+	issn = {1572-9338},
+	url = {https://doi.org/10.1007/s10479-025-06481-3},
+	doi = {10.1007/s10479-025-06481-3},
+	abstract = {The Picker Routing Problem (PRP), which consists of finding a minimum-length tour between a set of storage locations in a warehouse, is one of the most important problems in the warehousing logistics literature. Despite its popularity, the tractability of the PRP in multi-block warehouses remains an open question. This technical note aims to fill this research gap by establishing that the problem is strongly NP-hard. As a corollary, the complexity status of other related problems is settled.},
+	language = {en},
+	urldate = {2025-01-24},
+	journal = {Annals of Operations Research},
+	author = {Prunet, Thibault and Absi, Nabil and Cattaruzza, Diego},
+	month = jan,
+	year = {2025},
+      archivePrefix={arXiv},
+      arxiv={https://arxiv.org/abs/2312.01857}
+}
+
 @misc{prunet2024storagelocationassignmentpicker,
       abbr={Preprint},
       bibtex_show={true},
@@ -14,19 +53,6 @@
       abstract={The Storage Location Assignment Problem (SLAP) and the Picker Routing Problem (PRP) have received significant attention in the literature due to their pivotal role in the performance of the Order Picking (OP) activity, the most resource-intensive process of warehousing logistics. The two problems are traditionally considered at different decision-making levels: tactical for the SLAP, and operational for the PRP. However, this paradigm has been challenged by the emergence of modern practices in e-commerce warehouses, where decisions are more dynamic. This shift makes the integrated problem, called the Storage Location Assignment and Picker Routing Problem (SLAPRP), pertinent to consider. Scholars have investigated several variants of the SLAPRP, including different warehouse layouts and routing policies. Nevertheless, the available computational results suggest that each variant requires an ad-hoc formulation. Moreover, achieving a complete integration of the two problems, where the routing is solved optimally, remains out of reach for commercial solvers, even on trivial instances.
 
 In this paper, we propose an exact solution framework that addresses a broad class of variants of the SLAPRP, including all the previously existing ones. This paper proposes a Branch-Cut-and-Price framework based on a novel formulation with an exponential number of variables, which is strengthened with a novel family of non-robust valid inequalities. We have developed an ad-hoc branching scheme to break symmetries and maintain the size of the enumeration tree manageable. Computational experiments show that our framework can effectively solve medium-sized instances of several SLAPRP variants and outperforms the state-of-the-art methods from the literature.}
-}
-
-@misc{prunet2023intractability,
-      abbr={Preprint},
-      bibtex_show={true},
-      title={The Intractability of the Picker Routing Problem}, 
-      author={Thibault Prunet and Nabil Absi and Diego Cattaruzza},
-      year={2023},
-      eprint={2312.01857},
-      archivePrefix={arXiv},
-      primaryClass={cs.DS},
-      arxiv={https://arxiv.org/abs/2312.01857},
-      abstract={The Picker Routing Problem (PRP), which consists in finding a minimum-length tour between a set of storage locations in a warehouse, is one of the most important problems in the warehousing logistics literature. Despite its popularity, the tractability of the PRP in conventional multi-block warehouses remains an open question. This technical note aims to fill this research gap by establishing that the PRP is strongly NP-hard. }
 }
 
 @article{PRUNET2024100136,
