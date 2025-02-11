@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-## Ecole des Ponts et Chaussées
+## Ecole Nationale des Ponts et Chaussées
 
 Teaching assistant and lecturer:
 - Operations Research (2024)
