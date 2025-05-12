@@ -12,13 +12,14 @@
 
 @misc{bouvier2025contextualMD,
       abbr={Preprint},
+      bibtex_show={true},
       title={Primal-dual algorithm for contextual stochastic combinatorial optimization}, 
-      author={Louis Bouvier and Vincent Leclère and Axel Parmentier and Thibault Prunet},
+      author={Louis Bouvier and Thibault Prunet and Vincent Leclère and Axel Parmentier},
       year={2025},
+      archivePrefix={arXiv},
+      arxiv={https://arxiv.org/abs/2505.04757},
       pdf={https://prunett.github.io/assets/pdf/WP_contextual_MD.pdf},
-      abstract={This paper introduces a novel approach to contextual stochastic optimization, combining operations research and machine learning to address decision-making under uncertainty. Traditional methods fall short in leveraging contextual information, prompting the need for new algorithms. We use neural networks with combinatorial optimization layers to encode policies. Our goal is to minimize the empirical risk, estimated from past data on uncertain parameters and contexts.
-To that end, we present a surrogate learning problem and a generic primal-dual algorithm applicable to various combinatorial stochastic optimization settings. Our approach extends classic Fenchel-Young loss results and introduces a new regularization method using sparse perturbations on the distribution simplex. This allows for tractable updates in the original space and handles diverse objective functions.
-We demonstrate the linear convergence of our algorithm under certain conditions and provide a bound on the non-optimality of the resulting policy regarding empirical risk. Experiments on a contextual stochastic minimum weight spanning tree problem show that our algorithm is efficient and scalable, outperforming a sophisticated Lagrangian-based heuristic with reduced computational effort.}
+      abstract={This paper introduces a novel approach to contextual stochastic optimization, integrating operations research and machine learning to address decision-making under uncertainty. Traditional methods often fail to leverage contextual information, which underscores the necessity for new algorithms. In this study, we utilize neural networks with combinatorial optimization layers to encode policies. Our goal is to minimize the empirical risk, which is estimated from past data on uncertain parameters and contexts. To that end, we present a surrogate learning problem and a generic primal-dual algorithm that is applicable to various combinatorial settings in stochastic optimization. Our approach extends classic Fenchel-Young loss results and introduces a new regularization method using sparse perturbations on the distribution simplex. This allows for tractable updates in the original space and can accommodate diverse objective functions. We demonstrate the linear convergence of our algorithm under certain conditions and provide a bound on the non-optimality of the resulting policy in terms of the empirical risk. Experiments on a contextual stochastic minimum weight spanning tree problem show that our algorithm is efficient and scalable, achieving performance comparable to imitation learning of solutions computed using an expensive Lagrangian-based heuristic.}
 }
 
 @article{prunet_note_2025,
