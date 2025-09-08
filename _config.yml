@@ -6,9 +6,9 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Thibault
 middle_name: 
 last_name: Prunet
-email: thibault.prunet@enpc.fr
+email: thibault.prunet@math.u-bordeaux.fr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral researcher at the CERMICS lab working in the interplay between machine learning and combinatorial optimization.
+  Assistant Professor (Maître de Conférences) at the Math Institute of the University of Bordeaux and Researcher in the INRIA EDGE team working in the interplay between machine learning and combinatorial optimization.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
